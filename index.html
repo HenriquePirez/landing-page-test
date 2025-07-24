@@ -2,20 +2,68 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dona Dôra Pizzaria</title>
-  <link rel="stylesheet" href="styles.css" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dona Dora Delivery</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="form-section">
-      <h2 class="brand">D'DÔRA</h2> <!-- Nome da marca -->
-      <h1>Cadastre-se e ganhe uma fatia de pizza</h1>
-      <input type="text" placeholder="Insira seu melhor email..." />
-    </div>
-    <div class="image-section"></div>
+
+  <header>
+    <h1>Dona Dora</h1>
+    <nav>
+      <a href="#pedido">Fazer pedido</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="hero">
   </div>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p style="text-align: center; max-width: 700px; margin: auto;">
+      A Dona Dora Delivery é apaixonada por levar o verdadeiro sabor da Itália até você. Utilizamos ingredientes frescos e receitas tradicionais que tornam cada pedido uma experiência única. Entregamos com carinho pizzas, massas e lasanhas feitas para encantar.
+    </p>
+  </section>
+
+  <section id="produtos">
+    <h2>Cardápio</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="pizza.jpg" alt="Pizza">
+        <h3>Pizzas</h3>
+        <p>Sabores irresistíveis com massas artesanais e bordas recheadas.</p>
+      </div>
+      <div class="produto">
+        <img src="lasanha1.png" alt="Lasanha">
+        <h3>Lasanhas</h3>
+        <p>Camadas de sabor com molho caseiro, queijo e muito amor.</p>
+      </div>
+      <div class="produto">
+        <img src="macarrao.png" alt="Macarrão">
+        <h3>Massas</h3>
+        <p>Macarrão no ponto certo com molhos autênticos e irresistíveis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="pedido">
+    <h2>Faça seu pedido agora!</h2>
+    <p>Toque no botão abaixo e veja nosso cardápio completo no site de pedidos.</p>
+    <a href="https://donadoradelivery.mandarpedido.com/mobile/home" target="_blank">Acessar Cardápio</a>
+  </section>
+
+  <footer id="contato">
+    <div class="footer-content">
+      <h3>Contato</h3>
+      <p>📞 Telefone: <strong>(27) 3828-7070</strong></p>
+      <p>🌐 Site: <a href="https://donadoradelivery.mandarpedido.com/mobile/home" target="_blank">donadoradelivery.mandarpedido.com</a></p>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Dona Dora Delivery — Todos os direitos reservados.
+    </div>
+  </footer>
+
 </body>
 </html>
