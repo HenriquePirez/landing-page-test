@@ -13,7 +13,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -41,21 +41,26 @@
     </nav>
   </header>
 
+  <div id="sobre"></div>
+
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="hero-slide" style="background-image: url('/images/pizza.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('/images/massas/pene\ com\ molho\ branco\ brocolis\ e\ frango.jpg');"></div>
       </div>
       <div class="carousel-item">
-        <div class="hero-slide" style="background-image: url('/images/pizza2.png');"></div>
+        <div class="hero-slide" style="background-image: url('/images/fundo-images-camera.png');"></div>
       </div>
       <div class="carousel-item">
-        <div class="hero-slide" style="background-image: url('/images/pizza3.png');"></div>
+        <div class="hero-slide" style="background-image: url('/images/massas/penne\ quatro\ queijos.jpg');"></div>
+      </div>
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('/images/fundo-images-camera.png');"></div>
       </div>
     </div>
   </div>
 
-  <section id="sobre">
+  <section class="sobre-nos">
     <h2>Sobre Nós</h2>
     <p style="text-align: center; max-width: 700px; margin: auto;">
       A Dona Dôra é apaixonada por levar o verdadeiro sabor da Itália até você. Utilizamos ingredientes frescos
@@ -67,19 +72,19 @@
   <section id="produtos">
     <h2>Cardápio</h2>
     <div class="produtos">
-      <div class="produto">
-        <img src="/images/pizza.jpg" alt="Pizza">
+      <div class="produto" onclick="scrollToSection('pizzas')">
+        <img src="/images/DI ' PARMA.jpg" alt="Pizza">
         <h3>Pizzas</h3>
         <p>Sabores irresistíveis com massas artesanais e bordas recheadas.</p>
       </div>
-      <div class="produto">
-        <img src="/images/lasanha1.png" alt="Lasanha">
+      <div class="produto" onclick="scrollToSection('lasanhas')">
+        <img src="/images/massas/lasanha bolonhesa.jpg" alt="Lasanha">
         <h3>Lasanhas</h3>
         <p>Camadas de sabor com molho caseiro, queijo e muito amor.</p>
       </div>
-      <div class="produto">
-        <img src="/images/macarrao.png" alt="Macarrão">
-        <h3>Massas</h3>
+      <div class="produto" onclick="scrollToSection('pasta')">
+        <img src="/images/massas/talharim ao molho madeira com filé mignon.jpg" alt="Macarrão">
+        <h3>Pasta</h3>
         <p>Macarrão no ponto certo com molhos autênticos e irresistíveis.</p>
       </div>
     </div>
@@ -139,7 +144,6 @@
         <ul class="diferenciais-lista">
           <li><i class="fas fa-check"></i> Ingredientes frescos e selecionados</li>
           <li><i class="fas fa-check"></i> Entrega rápida</li>
-          <li><i class="fas fa-check"></i> Atendimento humanizado</li>
           <li><i class="fas fa-check"></i> Massa artesanal</li>
           <li><i class="fas fa-check"></i> Molhos exclusivos da casa</li>
           <li><i class="fas fa-check"></i> Lasanhas com receitas caseiras</li>
@@ -173,6 +177,110 @@
     </div>
   </section>
 
+  <section class="pizza-destaque" id="pizzas">
+    <h2>Pizzas</h2> 
+    <div class="pizza-destaque-container">
+      <div class="pizza-destaque-content">
+        <img src="images/MARGUERITA.jpg" alt="Pizza Dona Dora">
+        <div class="pizza-destaque-texto">
+          <h>Marguerita</h2>
+            <p>🥫Molho de tomate</p>
+            <p>&#129472 Queijo mussarela</p>
+            <p>&#127813 Fatias de tomate</p>
+            <p>&#127811 Folhas de manjericão</p>
+            <p>&#129476 Alho frito</p>
+            <p>Orégano</p>
+        </div>
+      </div>
+
+      <div class="pizza-destaque-content">
+        <img src="images/NORDESTINA.jpg" alt="Pizza Dona Dora">
+        <div class="pizza-destaque-texto">
+          <h>Nordestina</h2>
+            <p>🥫Molho de tomate</p>
+            <p>&#129472 Queijo mussarela</p>
+            <p>&#127830 Carne de sol</p>
+            <p>Requeijão cremoso</p>
+            <p>&#127807 Folhas de salsinha</p>
+            <p>Cebolinha</p>
+            <p>Orégano</p>
+        </div>
+      </div>
+
+      <div class="pizza-destaque-content">
+        <img src="images/POLLO CREMOSO.jpg" alt="Pizza Pollo">
+        <div class="pizza-destaque-texto">
+          <h>Pollo Cremoso</h2>
+            <p>🥫Molho de tomate</p>
+            <p>&#129472 Queijo mussarela</p>
+            <p>&#127831 Frango desfiado</p>
+            <p>Requeijão cremoso</p>
+            <p>Orégano</p>
+        </div>
+      </div>
+
+      <div class="pizza-destaque-content">
+        <img src="images/GAMBERI.jpg" alt="Pizza Pollo">
+        <div class="pizza-destaque-texto">
+          <h>Gamberi</h2>
+            <p>🥫Molho de tomate</p>
+            <p>&#129472 Queijo mussarela</p>
+            <p>&#129424 Camarão</p>
+            <p>Alcaparras</p>
+            <p>Requeijão cremoso</p>
+            <p>Orégano</p>
+        </div>
+      </div>
+
+      <div class="pizza-destaque-content">
+        <img src="images/CALABRESA.jpg" alt="Pizza Pollo">
+        <div class="pizza-destaque-texto">
+          <h>Calabresa</h2>
+            <p>🥫Molho de tomate</p>
+            <p>&#129472 Queijo mussarela</p>
+            <p>Linguiça calabresa</p>
+            <p>Orégano</p>
+        </div>
+      </div>
+
+       <div class="pizza-destaque-content">
+        <img src="images/DI ' PARMA.jpg" alt="Pizza Pollo">
+        <div class="pizza-destaque-texto">
+          <h>Di' Parma</h2>
+            <p>🥫Azeite de oliva</p>
+            <p>&#129472 Queijo mussarela</p>
+            <p>Presunto di' parma</p>
+            <p>&#127811 Manjericão</p>
+            <p> Orégano</p>
+        </div>
+      </div>
+
+       <div class="pizza-destaque-content">
+        <img src="images/PEPERONI.jpg" alt="Pizza Pollo">
+        <div class="pizza-destaque-texto">
+          <h>Peperoni</h2>
+            <p>🥫Molho de tomate</p>
+            <p>&#129472 Queijo mussarela</p>
+            <p>Peperoni apimentado</p>
+            <p> Orégano</p>
+        </div>
+      </div>
+
+       <div class="pizza-destaque-content">
+        <img src="images/DONA DORA.jpg" alt="Pizza Pollo">
+        <div class="pizza-destaque-texto">
+          <h>Dona Dôra</h2>
+            <p>🥫Molho de tomate</p>
+            <p>&#129472 Queijo mussarela</p>
+            <p>Linguiça calabresa</p>
+            <p>Cebola caramelizada</p>
+            <p>Queijo ricota</p>
+            <p> Orégano</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="cta" id="pedido">
     <h2>Faça seu pedido agora!</h2>
     <p>Toque no botão abaixo e veja nosso cardápio completo no site de pedidos.</p>
@@ -198,14 +306,14 @@
 
       <div class="footer-col">
         <h3>Comercial</h3>
-        <p><i class="fas fa-location-dot"></i> Rua Cambebas, 210 - Iguaçu - Ipatinga - MG</p>
+        <p><i class="fas fa-location-dot"></i> Rua Graciliano Ramos, 88A - Cidade Nobre - Ipatinga - MG</p>
         <p><i class="fa-solid fa-phone"></i> 3828-7070 </p>
       </div>
 
       <div class="footer-col">
         <h3>Como chegar</h3>
         <div class="social-icons">
-          <a href="https://www.google.com/maps/place/R.+Cambebas,+210+-+Igua%C3%A7u,+Ipatinga+-+MG,+35162-042/@-19.4739249,-42.5588684,17z/data=!3m1!4b1!4m6!3m5!1s0xafffe6cef85f51:0x531f270748f1cd41!8m2!3d-19.47393!4d-42.5562935!16s%2Fg%2F11crtwy80g?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
+          <a href="https://www.google.com/maps/place/D%C2%B4D%C3%B4ra+Delivery/@-19.46805,-42.5627461,827m/data=!3m2!1e3!4b1!4m6!3m5!1s0xafffe6923faa1d:0x8f85f90c1a589e42!8m2!3d-19.4680551!4d-42.5601712!16s%2Fg%2F1tdvldxs!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"><i class="fas fa-map-marked-alt"></i></a>
         </div>
       </div>
@@ -217,9 +325,8 @@
     </div>
   </footer>
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="script/scripts.js"></script>
 </body>
 
 </html>
