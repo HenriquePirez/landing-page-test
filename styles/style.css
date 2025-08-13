@@ -31,28 +31,51 @@ header {
     background: var(--verde);
     color: var(--branco);
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 1rem;
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 header img {
-    width: 5%
+    width: 10%;
+    min-width: 50px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    order: 2;
 }
 
 nav a {
     color: var(--branco);
-    margin-left: 2rem;
+    margin: 0 0.75rem;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
-    font-size: 125%
+    font-size: 110%;
 }
 
-nav a:hover {
-    color: var(--laranja);
+@media (min-width: 769px) {
+    header {
+        flex-wrap: nowrap;
+        padding: 1rem 2rem;
+    }
+    nav {
+        width: auto;
+        order: 1;
+        justify-content: flex-end;
+    }
+    header img {
+        width: 5%;
+        order: 0;
+    }
 }
 
 #heroCarousel {
