@@ -20,7 +20,8 @@ body {
     background: url('../images/pizzaria.png') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 header {
@@ -309,22 +310,25 @@ section h2 {
 
 .crostini-section {
     display: flex;
-    height: 60%;
     flex-direction: column;
     gap: 2rem;
     background-color: #f9f9f9;
-    margin-bottom: 4rem;
+    margin: 4rem;
+    padding: 2rem;
     border-radius: 10px;
+    text-align: center;
+    justify-content: space-between;
 }
 
-@media (min-width: 768px) {
-    .crostini-section {
-        flex-direction: row;
-        align-items: center;
-    }
-    .crostini-text, .crostini-img {
-        flex: 1;
-    }
+.crostini-text {
+    flex: 1;
+    width: 100%;
+}
+
+.crostini-img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .crostini-img img {
@@ -334,19 +338,36 @@ section h2 {
     box-shadow: var(--sombra);
 }
 
-.crostini-text {
-  flex: 1 1 500px;
+.crostini-text h2 {
+    color: var(--verde);
+    margin-bottom: 1rem;
 }
 
-.crostini-texto h2 {
-  color: var(--verde);
-  margin-bottom: 1rem;
+.crostini-text p {
+    margin-bottom: 1rem;
+    color: #333;
+    line-height: 1.6;
 }
 
-.crostini-texto p {
-  margin-bottom: 1rem;
-  color: #333;
-  line-height: 1.6;
+@media (min-width: 768px) {
+    .crostini-section {
+        flex-direction: row;
+        text-align: left;
+        margin: 2rem auto;
+    }
+
+    .diferenciais-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .crostini-text, .crostini-img {
+        flex: 1;
+    }
+
+    .crostini-text {
+        padding-right: 2rem;
+    }
 }
 
 .cta {
@@ -390,11 +411,12 @@ section h2 {
 
 .pizza-destaque-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 10fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: center;
     padding: 1rem;
 }
+
 .pizza-destaque-content {
     display: flex;
     flex-direction: column;
@@ -405,6 +427,7 @@ section h2 {
     box-shadow: var(--sombra);
     transition: var(--transicao);
 }
+
 .pizza-destaque-content:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
