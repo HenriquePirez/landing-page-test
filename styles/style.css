@@ -15,6 +15,31 @@
     scroll-behavior: smooth;
 }
 
+@media (min-width: 768px) {
+  #navbarToggleExternalContent3 {
+    display: none;
+  }
+
+  .navbar.d-md-none {
+    display: none;
+  }
+}
+
+#navbarToggleExternalContent3 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: white;
+}
+
+.btn-link.btn-block {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  color: #333;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -26,25 +51,73 @@ body {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: var(--verde);
-    color: var(--branco);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--verde);
+  color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-header img {
-    width: 10%;
-    min-width: 50px;
+header .logo {
+  width: 120px;
+  min-width: 50px;
 }
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Botão hamburguer */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--branco);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* esconde menu no mobile */
+    flex-direction: column;
+    background: var(--verde);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block; /* mostra botão hamburguer */
+  }
+}
+
 
 nav {
     display: flex;
@@ -78,6 +151,31 @@ nav a {
         width: 5%;
         order: 0;
     }
+}
+
+@media (min-width: 768px) {
+  #navbarToggleExternalContent3 {
+    display: none;
+  }
+
+  .navbar.d-md-none {
+    display: none;
+  }
+}
+
+#navbarToggleExternalContent3 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: white;
+}
+
+.btn-link.btn-block {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  color: #333;
 }
 
 #heroCarousel {
@@ -397,28 +495,30 @@ section h2 {
 }
 
 .pizza-destaque {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 1rem;
-  margin-bottom: 4rem; 
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin-bottom: 4rem;
 }
 
 .pizza-destque-title {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .pizza-destaque-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    justify-content: center;
     padding: 1rem;
+    justify-items: center;
 }
 
 .pizza-destaque-content {
+    width: 100%;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,29 +537,37 @@ section h2 {
 .pizza-destaque-content img {
     width: 90%;
     max-height: 200px;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .pizza-destaque-texto {
-  width: 100%;
-  height: 50%; 
-  padding: 10px;
+    width: 100%;
+    padding: 10px;
 }
 
 .pizza-destaque-texto h2 {
     margin: 10px 0;
     font-size: 1.2em;
-    font-weight: 600
+    font-weight: 600;
 }
 
 .pizza-destaque-texto p {
-    font-size: 0.9em; 
+    font-size: 0.9em;
     margin: 5px 0;
     color: orange;
-    font-weight: 500
+    font-weight: 500;
 }
+
+/* Ajuste para telas menores que 768px */
+@media (max-width: 768px) {
+    .pizza-destaque-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
 
 footer {
     background-color: var(--verde);

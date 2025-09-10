@@ -31,26 +31,30 @@
 </head>
 
 <body>
-
   <header>
-    <img src="images/logo.png" alt="Logo Dona Dôra - Pizzaria Artesanal" loading="lazy">
-    </button>
-    <nav aria-label="Navegação principal">
-      <a href="#sobre" aria-label="Ir para Sobre nós">Sobre nós</a>
-      <a href="#pedido" aria-label="Fazer pedido">Fazer pedido</a>
-      <a href="#contato" aria-label="Ir para Contato">Contato</a>
-    </nav>
-  </header>
+  <img src="images/logo2.png" alt="Logo Dona Dôra - Pizzaria Artesanal" loading="lazy" class="logo">
+
+  <!-- Botão hamburguer (visível só no mobile) -->
+  <button class="menu-toggle" aria-label="Abrir menu">
+    ☰
+  </button>
+
+  <!-- Menu -->
+  <nav class="menu" aria-label="Navegação principal">
+    <a href="#sobre" aria-label="Ir para Sobre nós">Sobre nós</a>
+    <a href="#pedido" aria-label="Fazer pedido">Fazer pedido</a>
+    <a href="#contato" aria-label="Ir para Contato">Contato</a>
+  </nav>
+</header>
+
 
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="hero-slide"
-          style="background-image: url('/images/rangone.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('/images/rangone.jpg');"></div>
       </div>
       <div class="carousel-item active">
-        <div class="hero-slide"
-          style="background-image: url('/images/bolonhesa-com-palmito.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('/images/bolonhesa-com-palmito.jpg');"></div>
       </div>
       <div class="carousel-item">
         <div class="hero-slide" style="background-image: url('/images/massas/penne\ bolonhesa.jpg');"></div>
@@ -59,7 +63,8 @@
         <div class="hero-slide" style="background-image: url('/images/massas/penne\ quatro\ queijos.jpg');"></div>
       </div>
       <div class="carousel-item">
-        <div class="hero-slide" style="background-image: url('/images/massas/talharim\ ao\ alho\ e\ oleo\ com\ bacon.jpg');"></div>
+        <div class="hero-slide"
+          style="background-image: url('/images/massas/talharim\ ao\ alho\ e\ oleo\ com\ bacon.jpg');"></div>
       </div>
     </div>
   </div>
