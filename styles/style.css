@@ -25,21 +25,6 @@
   }
 }
 
-#navbarToggleExternalContent3 {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  background-color: white;
-}
-
-.btn-link.btn-block {
-  text-align: left;
-  padding: 0.5rem 1rem;
-  color: #333;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -48,6 +33,14 @@ body {
   background-size: cover;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+/* No celular troca para outra imagem */
+@media (max-width: 768px) {
+  body {
+    background: url('../images/pizzaria-mobile.png') no-repeat center center fixed;
+    background-size: cover;
+  }
 }
 
 header {
@@ -118,7 +111,6 @@ header .logo {
   }
 }
 
-
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -163,23 +155,8 @@ nav a {
   }
 }
 
-#navbarToggleExternalContent3 {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  background-color: white;
-}
-
-.btn-link.btn-block {
-  text-align: left;
-  padding: 0.5rem 1rem;
-  color: #333;
-}
-
 #heroCarousel {
-  margin-top: 10px; 
+  margin-top: 70px; 
   position: relative;
   top: 0;
   z-index: 0;
@@ -205,20 +182,21 @@ section {
 section h2 {
     text-align: center;
     color: var(--verde);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .sobre-nos {
   padding: 2rem 1rem;
   background-color: #f9f9f9;
-  margin-top: 2rem;
+  margin-top: rem;
   border-radius: 10px;
   width: 80%;
+  margin-top: 4rem;
 }
 
 .sobre-nos p {
   width: 500;
-  font-size: 20px
+  font-size: 1.5rem;
 }
 
 #produtos {
@@ -417,6 +395,7 @@ section h2 {
     border-radius: 10px;
     text-align: center;
     justify-content: space-between;
+    margin-bottom: 4rem;
 }
 
 .crostini-text {
@@ -475,7 +454,8 @@ section h2 {
   color: var(--branco);
   padding: 3rem 1rem;
   border-radius: 10px;
-  margin-bottom: 4rem; 
+  margin-bottom: 4rem;
+  margin 
 }
 
 .cta a {
@@ -554,7 +534,7 @@ section h2 {
 }
 
 .pizza-destaque-texto p {
-    font-size: 0.9em;
+    font-size: 1em;
     margin: 5px 0;
     color: orange;
     font-weight: 500;

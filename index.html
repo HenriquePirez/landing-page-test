@@ -32,39 +32,38 @@
 
 <body>
   <header>
-  <img src="images/logo2.png" alt="Logo Dona Dôra - Pizzaria Artesanal" loading="lazy" class="logo">
+    <img src="images/logo2.png" alt="Logo Dona Dôra - Pizzaria Artesanal" loading="lazy" class="logo">
 
-  <!-- Botão hamburguer (visível só no mobile) -->
-  <button class="menu-toggle" aria-label="Abrir menu">
-    ☰
-  </button>
+    <!-- Botão hamburguer (visível só no mobile) -->
+    <button class="menu-toggle" aria-label="Abrir menu">
+      ☰
+    </button>
 
-  <!-- Menu -->
-  <nav class="menu" aria-label="Navegação principal">
-    <a href="#sobre" aria-label="Ir para Sobre nós">Sobre nós</a>
-    <a href="#pedido" aria-label="Fazer pedido">Fazer pedido</a>
-    <a href="#contato" aria-label="Ir para Contato">Contato</a>
-  </nav>
-</header>
+    <!-- Menu -->
+    <nav class="menu" aria-label="Navegação principal">
+      <a href="#sobre" aria-label="Ir para Sobre nós">Sobre nós</a>
+      <a href="#pedido" aria-label="Fazer pedido">Fazer pedido</a>
+      <a href="#contato" aria-label="Ir para Contato">Contato</a>
+    </nav>
+  </header>
 
 
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="hero-slide" style="background-image: url('/images/rangone.jpg');"></div>
-      </div>
-      <div class="carousel-item active">
-        <div class="hero-slide" style="background-image: url('/images/bolonhesa-com-palmito.jpg');"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="hero-slide" style="background-image: url('/images/massas/penne\ bolonhesa.jpg');"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="hero-slide" style="background-image: url('/images/massas/penne\ quatro\ queijos.jpg');"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="hero-slide"
-          style="background-image: url('/images/massas/talharim\ ao\ alho\ e\ oleo\ com\ bacon.jpg');"></div>
+  <!-- Hero Carousel - havia duas "active" (bug) -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="hero-slide" style="background-image: url('/images/rangone.jpg');"></div>
+    </div>
+    <div class="carousel-item">
+      <div class="hero-slide" style="background-image: url('/images/bolonhesa-com-palmito.jpg');"></div>
+    </div>
+    <div class="carousel-item">
+      <div class="hero-slide" style="background-image: url('/images/massas/penne bolonhesa.jpg');"></div>
+    </div>
+    <div class="carousel-item">
+      <div class="hero-slide" style="background-image: url('/images/massas/penne quatro queijos.jpg');"></div>
+    </div>
+    <div class="carousel-item">
+      <div class="hero-slide" style="background-image: url('/images/massas/talharim ao alho e oleo com bacon.jpg');">
       </div>
     </div>
   </div>
@@ -186,7 +185,7 @@
   </section>
 
   <section class="pizza-destaque" id="pizzas">
-    <h2>Nossos melhores sabores</h2>
+    <h2>As mais queridas</h2>
     <div class="pizza-destaque-container">
       <div class="pizza-destaque-content">
         <img src="images/MARGUERITA.jpg" alt="Pizza Dona Dora">
@@ -227,7 +226,7 @@
         </div>
       </div>
 
-      <div class="pizza-destaque-content">
+      <!-- <div class="pizza-destaque-content">
         <img src="images/GAMBERI.jpg" alt="Pizza Pollo">
         <div class="pizza-destaque-texto">
           <h>Gamberi</h2>
@@ -272,7 +271,7 @@
             <p>Peperoni apimentado</p>
             <p> Orégano</p>
         </div>
-      </div>
+      </div> -->
 
       <div class="pizza-destaque-content">
         <img src="images/DONA DORA.jpg" alt="Pizza Pollo">
@@ -287,6 +286,43 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="pizza-destaque" id="massas">
+    <h2>Nossas Massas Artesanais</h2>
+    <div class="pizza-destaque-container">
+      <div class="pizza-destaque-content">
+        <img src="images/massas/talharim ao molho branco.jpg" alt="Pizza Dona Dora">
+        <div class="pizza-destaque-texto">
+          <h>Talharim com molho Alfredo</h2>
+            <p>Pasta fresca artesanal no ponto perfeito, envolvida por molho Alfredo com manteiga, creme de leite fresco e parmesão ralado. Finalizada com noz-moscada e pimenta-do-reino moída na hora.</p>
+        </div>
+      </div>
+
+      <div class="pizza-destaque-content">
+        <img src="images/massas/penne bolonhesa.jpg" alt="Pizza Dona Dora">
+        <div class="pizza-destaque-texto">
+          <h>Penne a bolonhesa</h2>
+            <p>Penne servido com molho caseiro tipo bolonhesa de carne bovina e suína com tomate italiano, manjericão e queijo mussarela.</p>
+        </div>
+      </div>
+
+      <div class="pizza-destaque-content">
+        <img src="images/massas/talharim ao pesto com frango.jpg" alt="Pizza Dona Dora">
+        <div class="pizza-destaque-texto">
+          <h>Talharim Frango ao Pesto</h2>
+            <p>Talharim servido com molho pesto, frango desfiado e queijo mussarela.</p>
+        </div>
+      </div>
+
+      <div class="pizza-destaque-content">
+        <img src="images/massas/penne quatro queijos.jpg" alt="Pizza Dona Dora">
+        <div class="pizza-destaque-texto">
+          <h>Penne Quatro queijos</h2>
+            <p>Penne al dente envolvido em molho cremoso de quatro queijos: muçarela, parmesão, gorgonzola e requeijão, 
+              finalizado com parmesão ralado e pimenta-do-reino.</p>
+        </div>
+      </div>
   </section>
 
   <section class="cta" id="pedido">
