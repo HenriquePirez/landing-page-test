@@ -390,12 +390,13 @@ section h2 {
     flex-direction: column;
     gap: 2rem;
     background-color: #f9f9f9;
-    margin: 4rem;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    margin: 0 auto 4rem auto; /* iguala com diferenciais */
+    max-width: 90%; /* garante mesma largura que outras sections */
+}
 }
 
 .crostini-text {
