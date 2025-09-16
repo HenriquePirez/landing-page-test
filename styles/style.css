@@ -42,8 +42,6 @@
   }
 }
 
-
-
 header {
   position: fixed;
   top: 0;
@@ -273,6 +271,27 @@ section h2 {
   padding: 0 20px 20px;
   color: #666;
   line-height: 1.5;
+}
+
+/* Deixa a imagem em preto e branco só na classe lasanha */
+.produto.lasanha img {
+  filter: grayscale(100%);
+  opacity: 0.7; /* deixa um pouco esmaecida pra destacar o texto */
+}
+
+/* Texto "Em breve" sobre a imagem */
+.produto.lasanha .em-breve {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6); /* fundo semitransparente */
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-transform: uppercase;
 }
 
 .diferenciais-section {
