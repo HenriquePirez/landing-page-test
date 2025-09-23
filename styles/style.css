@@ -43,7 +43,7 @@
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -175,7 +175,7 @@ nav a {
 section {
     padding: 2rem 1rem;
     max-width: 90%;
-    margin: auto;
+    margin: 4rem auto;
 }
 
 section h2 {
@@ -187,15 +187,15 @@ section h2 {
 .sobre-nos {
   padding: 2rem 1rem;
   background-color: #f9f9f9;
-  margin-top: rem;
   border-radius: 10px;
   width: 80%;
   margin-top: 4rem;
 }
 
 .sobre-nos p {
-  width: 500;
+  width: 800px;
   font-size: 1.5rem;
+  margin: 0 auto;
 }
 
 #produtos {
@@ -474,8 +474,7 @@ section h2 {
   color: var(--branco);
   padding: 3rem 1rem;
   border-radius: 10px;
-  margin-bottom: 4rem;
-  margin 
+  margin-bottom: 4rem auto;
 }
 
 .cta a {
@@ -563,11 +562,10 @@ section h2 {
 /* Ajuste para telas menores que 768px */
 @media (max-width: 768px) {
     .pizza-destaque-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
 }
-
 
 footer {
     background-color: var(--verde);
