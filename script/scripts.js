@@ -40,3 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+const pizzas = document.getElementsByClassName("carroussel--container")[0].children;
+let actualImg = 0;
+const loopInterval = setInterval(() => {
+  pizzas[actualImg].style.opacity = 0;
+  if (actualImg >= pizzas.length - 1) {
+    actualImg = 0;
+  } else {
+    actualImg += 1;
+  } 
+  pizzas[actualImg].style.opacity = 1;
+}, 2000);
