@@ -323,7 +323,7 @@ section h2 {
 
 /* Deixa a imagem em preto e branco só na classe lasanha */
 .produto.lasanha img {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   opacity: 0.7; /* deixa um pouco esmaecida pra destacar o texto */
 }
 
